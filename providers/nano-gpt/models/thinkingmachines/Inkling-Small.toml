@@ -1,0 +1,23 @@
+name = "Inkling Small"
+description = "The direct-answer version of Thinking Machines' 276B-parameter open-weights multimodal Mixture-of-Experts model with 12B active parameters. It accepts text and images, and is designed for coding, tool use, instruction following, and general conversational work."
+release_date = "2026-07-31"
+last_updated = "2026-07-31"
+attachment = true
+reasoning = false
+tool_call = true
+structured_output = false
+open_weights = true
+
+[cost]
+input = 0.5
+output = 1.2
+cache_read = 0.1
+
+[limit]
+context = 524_288
+input = 524_288
+output = 32_768
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
